@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Pill Reminder</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Smart Pill Reminder</h1>
+    <p class="tagline">💊 Never miss your medicine again!</p>
+  </header>
+
+  <main>
+    <section id="home" class="screen active">
+      <h2>Today's Medicines</h2>
+      <ul id="medicineList"></ul>
+    </section>
+
+    <section id="add" class="screen">
+      <h2>Add New Medicine</h2>
+      <div class="voice-input">
+        <input list="medicineNames" id="medicineName" placeholder="Medicine Name" />
+        <button id="voiceBtn">🎤</button>
+      </div>
+      <datalist id="medicineNames"></datalist>
+      <input type="time" id="medicineTime" />
+      <button id="saveMedicine">Save</button>
+    </section>
+
+    <section id="history" class="screen">
+      <h2>Medicine History</h2>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+
+  <nav>
+    <button id="homeBtn">Home</button>
+    <button id="addBtn">Add</button>
+    <button id="historyBtn">History</button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
