@@ -1,0 +1,10 @@
+{
+  "name": "Smart Pill Reminder",
+  "short_name": "Pill Reminder",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#e3f2fd",
+  "theme_color": "#2196f3",
+  "description": "Never miss your medicine again!",
+  "icons": []
+}
